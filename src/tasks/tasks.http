@@ -1,0 +1,36 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:3000/tasks?search=123&status=DONE
+Accept: application/json
+
+###
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "aleksa is not",
+  "description": "aleksa 123 desc"
+}
+
+###
+
+GET http://localhost:3000/tasks/615e97b0-b26d-11ea-8c4c-7b92c72202f6
+Accept: application/json
+
+###
+
+PATCH http://localhost:3000/tasks/b2b90cc0-b26e-11ea-a134-4b73870d049f/status
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
+
+###
